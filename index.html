@@ -284,6 +284,11 @@
             margin-bottom: 1.5rem;
             line-height: 1.7;
         }
+		
+		.project-content li {
+
+			margin-left: 2.5rem;    
+        }	
 
         .project-tags {
             display: flex;
@@ -468,6 +473,8 @@
         <div class="container">
             <h1>Database Solutions <strong>That Work</strong></h1>
             <p class="subtitle">Experienced MS Access developer specializing in custom business applications, automated workflows, and data-driven solutions that streamline operations and enhance productivity.</p>
+		
+			</br>
             <a href="#portfolio" class="cta-button">View My Work</a>
         </div>
     </section>
@@ -480,53 +487,100 @@
         </p>
         <p class="section-intro">
             My approach combines technical expertise with a deep understanding of business processes, ensuring that every solution I deliver not only works flawlessly but also genuinely improves how your team operates.
-        </p>
-    </section>
+		<br><br>
+		<a href="https://stackoverflow.com/users/122139/smandoli"><img src="https://stackoverflow.com/users/flair/122139.png" width="208" height="58" alt="profile for Smandoli at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Smandoli at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>	
+        </p>    
+	</section>
 
     <!-- Portfolio Section -->
     <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p class="section-intro">
-            A selection of projects demonstrating my expertise in database design, form development, automation, and reporting.
-        </p>
+        <h2>Stuff I've Done</h2>
+        <!-- <p class="section-intro"> -->
+            <!-- A selection of projects demonstrating my expertise in database design, form development, automation, and reporting. -->
+        <!-- </p> -->
 
         <div class="portfolio-grid">
             <div class="project-card">
                 <div class="project-image">📊</div>
                 <div class="project-content">
-                    <h3>Inventory Management System</h3>
-                    <p>Developed a comprehensive inventory tracking application with real-time stock levels, automated reorder alerts, and detailed reporting. Reduced stockouts by 40% and improved order accuracy.</p>
+                    
+					<h3>Property Valuation Analysis</h3>
+                    <p>
+					Took over administration of a comprehensive survey of property appraisal values that used Microsoft Access as the front-end for SQL Server. Rescued the application from fifteen years of chaotic development, inefficient engineering and a TODO by:
+					<ul>
+					<li>Implementing naming standards in form controls and code functions. </li>
+					<li>Making the VBA code variable-explicit and compilable. </li>
+					<li>Inserting explanatory comments in the code for both business rules and technical methods.</li>
+					<li>Optimizing the data processes between SQL Server and the front end.</li>
+					<li>Removing ____ of _____ forms.</li>
+					<ul>
+					Improved the speed of analytic reporting by 50%, earned the favor of both management and end-users, and facilitated the eventual migration of the front-end from Access to a browser-based solution.</p>
+					
                     <div class="project-tags">
                         <span class="tag">MS Access</span>
-                        <span class="tag">VBA Automation</span>
-                        <span class="tag">SQL Queries</span>
+                        <span class="tag">VBA refactoring</span>
+                        <span class="tag">SQL queries</span>
+                        <span class="tag">User engagement</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+					<img src="Eng to order.png" alt="engineered manufactured product" title="example of a product for which sales quotations must be tracked">
+					
+				</div>
+                <div class="project-content">
+                    
+					<h3>Engineer-to-Order Sales Support</h3>
+                    <!-- C:\Users\Boswell\Pictures\Utilitarian\FtnPeople_PDM -->
+					<p>
+					
+					An engineer-to-order manufacturer needed a way to develop and track sales quotations.  The solution I built in MS Access facilitated this for a period of seven years, and also handled
+					<ul>
+					<li>costing analysis</li>
+					<li>inter-departmental approval procedures across departments</li>
+					<li>RFQ document management</li>
+					</ul>
+					
+					</p>
+                    <div class="project-tags">
+                        <span class="tag">Database design</span>
+                        <span class="tag">RFQ</span>
+                        <span class="tag">Production costing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image"><img src="FP_PDM_N143-9.JPG" alt="engineered manufactured product" title="example of a product for which sales quotations must be tracked"></div>
+                <div class="project-content">
+                    
+					<h3>Materials Resource Planning</h3>
+                    
+					<p>
+					
+					A manufacturer needed better insights into inventory and manufacturing costs. The prerequisite data was stored in an accounting software package, effectively sealed against usage "out of the box".  I extracted the needed data into Access using ODBC connections and was able to deliver a complete set of manufacturing BOMs.  This led in turn to improved Materials Resource Planning, and eventually to production history reports enhanced with rolling averages and standard deviation -- all in Access. (The history, as things turned out, did not reflect well on the Production Manager.)   
+					
+					</p>
+                    <div class="project-tags">
+                        <span class="tag">Data mining</span>
+                        <span class="tag">MRP</span>
+                        <span class="tag">Statistical analysis</span>
                         <span class="tag">Reporting</span>
                     </div>
                 </div>
             </div>
-
-            <div class="project-card">
-                <div class="project-image">👥</div>
-                <div class="project-content">
-                    <h3>HR Management Database</h3>
-                    <p>Created an employee management system handling personnel records, performance reviews, training schedules, and leave requests. Streamlined HR processes for a 200+ employee organization.</p>
-                    <div class="project-tags">
-                        <span class="tag">Database Design</span>
-                        <span class="tag">Forms & Reports</span>
-                        <span class="tag">User Security</span>
-                    </div>
-                </div>
-            </div>
-
+			
             <div class="project-card">
                 <div class="project-image">📈</div>
                 <div class="project-content">
-                    <h3>Sales Analytics Dashboard</h3>
-                    <p>Built an interactive dashboard providing sales team with real-time metrics, trend analysis, and performance indicators. Automated weekly reporting that previously took 8 hours to prepare manually.</p>
+                    <h3>Medical Provider Credentialing</h3>
+                    <p>Developed data imports, reporting and procedures to support regulatory compliance and operational efficiency for a managed healthcare organization.  Leveraged the data process to facilitate primary source verification (PSV) workflows for provider credentialing.  
+					SSIS reporting.</p>
                     <div class="project-tags">
-                        <span class="tag">Dashboard Design</span>
-                        <span class="tag">Data Visualization</span>
-                        <span class="tag">Automation</span>
+                        <span class="tag">SQL stored procedures</span>
+                        <span class="tag">Workflow scripting</span>
                     </div>
                 </div>
             </div>
@@ -534,15 +588,45 @@
             <div class="project-card">
                 <div class="project-image">🔧</div>
                 <div class="project-content">
-                    <h3>Maintenance Tracking System</h3>
-                    <p>Designed a preventive maintenance scheduler for equipment management, including work orders, parts inventory, and vendor management. Improved equipment uptime by 25%.</p>
+                    <h3>Case-Review Process</h3>
+                    <p>Re-engineered a case-review process involving four departments.  Mapped business processes in order to improve and automate workflows.  Used Microsoft Access 
+with stored procedures and SSRS reporting to replace spreadsheets and ad-hoc emails, reducing administration time by 80%. 
+Built a workflow wizard in the application described above to facilitate and ensure 
+end-to-end fulfillment of the audit process. 
+
+</p>
                     <div class="project-tags">
-                        <span class="tag">Workflow Automation</span>
-                        <span class="tag">Scheduling</span>
-                        <span class="tag">Integration</span>
+                        <span class="tag">Workflow scripting</span>
+                        <span class="tag">Process review</span>
+                        <span class="tag">Reporting</span>
                     </div>
                 </div>
             </div>
+
+            <div class="project-card">
+                <div class="project-image">🔧</div>
+                <div class="project-content">
+                    <h3>Forensic review of credit accounts</h3>
+                    <p>...an internal audit of fixed-asset tranches containing over 500,000 financial accounts.  The information was archived in thousands of Excel spreadsheets that were semi-structured and subject to variations in design.  I used VBA to import and normalize the data in Access.  
+					For the project above, I created a user interface to allow a team of clerks to audit the accounts. This programmatic approach to the data saved thousands of person-hours. 
+</p>
+                    <div class="project-tags">
+                        <span class="tag">Audit review</span>
+                        <span class="tag">Data mapping</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🔧</div>
+                <div class="project-content">
+                    <h3>JIT inventory</h3>
+                    <p>...</p>
+                    <div class="project-tags">
+                        <span class="tag">Audit review</span>
+                        <span class="tag">Data mapping</span>
+                    </div>
+                </div>
+            </div>			
         </div>
     </section>
 
