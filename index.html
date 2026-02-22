@@ -255,7 +255,7 @@
             font-size: 3rem;
             color: var(--color-accent);
             position: relative;
-            overflow: hidden;
+            overflow: hidden; 
         }
 
         .project-image::before {
@@ -484,10 +484,10 @@
     <section id="about">
         <h2>About Me</h2>
         <p class="section-intro">
-            I'm a database developer with extensive experience creating custom MS Access applications that solve real business problems. From inventory management systems to complex reporting tools, I build solutions that are intuitive, reliable, and tailored to your specific needs.
+            I have decades of experience creating Microsoft Access applications for manufacturing, sales support, finance and other kinds of business. 
         </p>
         <p class="section-intro">
-            My approach combines technical expertise with a deep understanding of business processes, ensuring that every solution I deliver not only works flawlessly but also genuinely improves how your team operates.
+            This has required technical expertise, wisdom about process and change management, and ...,  ensuring that every solution I deliver not only works flawlessly but also genuinely improves how your team operates.
 		<br><br>
 		<a href="https://stackoverflow.com/users/122139/smandoli"><img src="https://stackoverflow.com/users/flair/122139.png" width="208" height="58" alt="profile for Smandoli at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Smandoli at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>	
         </p>    
@@ -495,140 +495,87 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio">
-        <h2>Stuff I've Done</h2>
+        <h2>Recognizing problems, making solutions.</h2>
         <!-- <p class="section-intro"> -->
             <!-- A selection of projects demonstrating my expertise in database design, form development, automation, and reporting. -->
         <!-- </p> -->
 
         <div class="portfolio-grid">
-            <div class="project-card">
-                <div class="project-image">📊</div>
-                <div class="project-content">
-                    
-					<h3>Property Valuation Analysis</h3>
-                    <p>
-					Administered a comprehensive survey of county data for property appraisal values stored in SQL Server with Microsoft Access as the front-end. Rescued the application from fifteen years of chaotic development, inefficient engineering and a TODO by:
-					<ul>
-					<li>Implementing naming standards in form controls and code functions. </li>
-					<li>Making the VBA code variable-explicit and compilable. </li>
-					<li>Inserting explanatory comments in the code for both business rules and technical methods.</li>
-					<li>Optimizing the data processes between SQL Server and the front end.</li>
-					<li>Removing ____ of _____ forms.</li>
-					<ul>
-					Improved the speed of analytic reporting by 50%, earned the favor of both management and end-users, and facilitated the eventual migration of the front-end from Access to a browser-based solution.</p>
-					
-                    <div class="project-tags">
-                        <span class="tag">MS Access</span>
-                        <span class="tag">VBA refactoring</span>
-                        <span class="tag">SQL queries</span>
-                        <span class="tag">User engagement</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="project-card">
+            <div class="project-card">      <!-- Engineer-to-Order Mfg -->
                 <div class="project-image">
-					<img src="img/eng_to_order_1.png" alt="engineer-to-order design path" title="example of a product for which sales quotations must be tracked">
+					<img src="img/eng_to_order_1.png" alt="A nozzle for use in a decorative water fountain." title="A product for efficient manufacture and sale.">
 					
 				</div>
                 <div class="project-content">
                     
-					<h3>Engineer-to-Order Sales Support</h3>
-                    <!-- C:\Users\Boswell\Pictures\Utilitarian\FtnPeople_PDM -->
+					<h3>Engineer-to-Order Production</h3>
 					<p>
-					
-					An engineer-to-order manufacturer needed a way to develop and track sales quotations.  The solution I built in MS Access facilitated this for a period of seven years, and also handled:
-					<ul>
-					<li>costing analysis</li>
-					<li>inter-departmental approval procedures across departments</li>
-					<li>RFQ document management</li>
-					</ul>
-					
+					An engineer-to-order manufacturing firm had no trouble selling projects, but needed a way to document and track quotations.  I converted the print-based catalog to Access and created a pick-list approach to building RFQs.  The application expanded into Materials Resource Planning. The key was data for the manufacturing bills of materials &mdash; but that was trapped in an accounting software package that used proprietary safeguards to prevent usage outside of the software's limited feature set.  I was able to migrate the BOMs over to SQL Server, and used Access on the front end for improved product costing and production reporting.  For seven years this solution helped sales, inventory, production planning and quality control. 
 					</p>
                     <div class="project-tags">
-                        <span class="tag">Database design</span>
-                        <span class="tag">RFQ</span>
-                        <span class="tag">Production costing</span>
+                        <span class="tag">MRP</span>
+                        <span class="tag">Product costing</span>
+                        <span class="tag">Production efficiency</span>
                     </div>
                 </div>
             </div>
+                        
+            <div class="project-card">      <!-- Property Valuation Analysis -->
+                <div class="project-image">
+					<img src="img/property_valuation.png" alt="houses with value" title="Residential properties with a hint of their relative value.">
+					
+				</div>                
 
-            <div class="project-card">
-                <div class="project-image"><img src="img/materials-resource-planning-1.png" alt="engineered manufactured product" title="example of a product for which sales quotations must be tracked"></div>
+                
                 <div class="project-content">
                     
-					<h3>Materials Resource Planning</h3>       
-					<p>
-					A manufacturer needed better insights into inventory and manufacturing costs. The prerequisite data was stored in an accounting software package, effectively sealed from use by obfuscatory design.  I extracted the needed data into Access using ODBC connections, which enabled me to deliver a complete set of manufacturing BOMs.  This led in turn to improved Materials Resource Planning, and eventually to production history reports enhanced with rolling averages and standard deviation -- all in Access. 
-                    </br></br>
-                    And yes -- I used Deplo blocks as visual aids in demonstrating interchangeablity of subassemblies.   
-					</p>
+					<h3>Property Valuation Analysis</h3>
+                    <p>
+					I administered a comprehensive survey of publicly-available information on property appraisal values, stored in SQL Server with Microsoft Access for the user interface. The front-end, in particular, needed rescue from fifteen years of chaotic development.  This I achieved by:
+					<ul><li>Cleaning up VBA code to make it variable-explicit and compilable</li>
+					<li>Optimizing the data processes between SQL Server and the front end</li>
+					<li>Annotating the code with explanations of both business rules and technical methods</li>
+                    <li>Redesigning forms for clarity and aesthetic design</li>
+					<ul>
+					These measures improved speed by 50% and facilitated the replacement of Access with a browser-based solution.</p>
                     <div class="project-tags">
-                        <span class="tag">Data mining</span>
-                        <span class="tag">MRP</span>
-                        <span class="tag">Statistical analysis</span>
-                        <span class="tag">Reporting</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">MS Access</span>
+                        <span class="tag">Optimization</span>
                     </div>
                 </div>
             </div>
 			
-            <div class="project-card">
-                <div class="project-image">📈</div>
+            <div class="project-card">      <!-- Medical Provider Credentialing -->
+                <div class="project-image">
+					<img src="img/med-credentialing.png" alt="standards for medical practice credentialing" title="Medical personnel and their regular assessment.">
+				</div>
                 <div class="project-content">
                     <h3>Medical Provider Credentialing</h3>
-                    <p>Developed data imports, reporting and procedures to support regulatory compliance and operational efficiency for a managed healthcare organization.  Leveraged the data process to facilitate primary source verification (PSV) workflows for provider credentialing.  
-					SSIS reporting.</p>
+                    <p>My work in SQL Server and Microsoft Access supported regulatory compliance and operational efficiency for a large managed care organization. To facilitate regular credentialing of 60,000 networked healthcare providers, I developed regular and ad-hoc data imports, reporting and many SQL procedures. </p>
                     <div class="project-tags">
-                        <span class="tag">SQL stored procedures</span>
-                        <span class="tag">Workflow scripting</span>
+                        <span class="tag">Work scheduling</span>
+                        <span class="tag">Compliance</span>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="project-image">🔧</div>
+            <div class="project-card">      <!-- Case-Review Process -->
+                <div class="project-image">
+					<img src="img/workflow diagram temp.png" alt="FIXME" title="FIXME.">
+				</div>
                 <div class="project-content">
                     <h3>Case-Review Process</h3>
-                    <p>Re-engineered a case-review process involving four departments.  Mapped 
-                        business processes in order to improve and automate workflows.  
-                        Used Microsoft Access with stored procedures and SSRS reporting to 
-                        replace spreadsheets and ad-hoc emails, reducing administration time by 80%. 
-                        Built a workflow wizard in the application described above to facilitate 
-                        end-to-end fulfillment. 
-
-</p>
+                    <p>I re-engineered a case-review process that involved four departments within a large managed-care organization.  After mapping the process, which relied a system of spreadsheets and ad-hoc emails, I implemented a solution using stored procedures in SQL Server, reporting via Microsoft SSRS, and a wizard-style automated process in Microsoft Access.  It reduced turnaround time by 80%. 
+                    </p>
                     <div class="project-tags">
-                        <span class="tag">Workflow scripting</span>
-                        <span class="tag">Process review</span>
-                        <span class="tag">Reporting</span>
+                        <span class="tag">Business Process Review</span>
+                        <span class="tag">Workflows</span>
                     </div>
                 </div>
             </div>
-
-            <div class="project-card">
-                <div class="project-image">🔧</div>
-                <div class="project-content">
-                    <h3>Forensic review of credit accounts</h3>
-                    <p>...an internal audit of fixed-asset tranches containing over 500,000 financial accounts.  The information was archived in thousands of Excel spreadsheets that were semi-structured and subject to variations in design.  I used VBA to import and normalize the data in Access.  
-					For the project above, I created a user interface to allow a team of clerks to audit the accounts. This programmatic approach to the data saved thousands of person-hours. 
-</p>
-                    <div class="project-tags">
-                        <span class="tag">Audit review</span>
-                        <span class="tag">Data mapping</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">🔧</div>
-                <div class="project-content">
-                    <h3>JIT inventory</h3>
-                    <p>...</p>
-                    <div class="project-tags">
-                        <span class="tag">Audit review</span>
-                        <span class="tag">Data mapping</span>
-                    </div>
-                </div>
-            </div>			
+		
         </div>
     </section>
 
