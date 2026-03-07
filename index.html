@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MS Access Developer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:ital,wght@0,300;0,400;0,600;1,300&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
             --color-ink: #1a1a1a;
-            --color-slate: #4a5568;
+            --color-slate: #2a313c;
             --color-mist: #e8edf2;
             --color-paper: #fafbfc;
-            --color-accent: #2c5282;
-            --color-accent-light: #4a90c8;
-            --serif: 'Fraunces', serif;
+            --color-accent: #2a5e89;
+            --color-accent-light: #306b9c;
+            --serif: 'Signika', serif;
             --sans: 'Work Sans', sans-serif;
         }
 
@@ -29,7 +29,7 @@
             color: var(--color-ink);
             background: var(--color-paper);
             line-height: 1.7;
-            font-weight: 300;
+            font-weight: 400;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -96,8 +96,8 @@
         /* Hero Section */
         .hero {
             margin-top: 80px;
-            padding: 8rem 2rem 6rem;
-            background: linear-gradient(135deg, #fafbfc 0%, #e8edf2 100%);
+            padding: 4rem 1rem 3rem;
+            background: linear-gradient(135deg, #fafbfc 0%, #c2cedb 100%);
             position: relative;
             overflow: hidden;
         }
@@ -183,7 +183,7 @@
 
         /* Section Styling */
         section {
-            padding: 6rem 2rem;
+            padding: 3rem 1rem;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -472,10 +472,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Database Solutions <strong>That Work</strong></h1>
-            <p class="subtitle">Experienced MS Access developer specializing in custom business applications, automated workflows, and data-driven solutions that streamline operations and enhance productivity.</p>
-		
-			</br>
+            <h1>Database Solutions <strong>that Work</strong></h1>
+            <p class="subtitle">I'm a Microsoft Access expert who works on business applications that feature data-driven solutions and automated workflows.  I've provided many companies with database apps to enable financial decision-making, streamline operations and enhance productivity.</p>
+			<!-- </br> -->
             <a href="#portfolio" class="cta-button">View My Work</a>
         </div>
     </section>
@@ -484,34 +483,34 @@
     <section id="about">
         <h2>About Me</h2>
         <p class="section-intro">
-            I have decades of experience creating Microsoft Access applications for manufacturing, sales support, finance and other kinds of business. 
-        </p>
-        <p class="section-intro">
-            This has required technical expertise, wisdom about process and change management, and ...,  ensuring that every solution I deliver not only works flawlessly but also genuinely improves how your team operates.
-		<br><br>
-		<a href="https://stackoverflow.com/users/122139/smandoli"><img src="https://stackoverflow.com/users/flair/122139.png" width="208" height="58" alt="profile for Smandoli at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Smandoli at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>	
-        </p>    
+            I've been creating and improving data applications in central Texas for over two decades.  
+			</br></br>
+			My main talent is communication.  I can unpack technical issues (see my posts on <a href="https://stackoverflow.com/users/122139/smandoli">Stack Overflow</a>, and I'm equally able to present my work in non-technical terms.  Either way, the discussion is brief and clear.
+            </br></br>
+            Another strength is change management.  I know the value of bringing everyone on board.  Many times, addressing a group of project stakeholders, I've successfully built a new consensus on design or implementation.  
+        </p> 
+ 
 	</section>
 
     <!-- Portfolio Section -->
     <section id="portfolio">
-        <h2>Recognizing problems, making solutions.</h2>
-        <!-- <p class="section-intro"> -->
-            <!-- A selection of projects demonstrating my expertise in database design, form development, automation, and reporting. -->
-        <!-- </p> -->
+        <h2>Portfolio</h2>
+        <p class="section-intro"> 
+            My work combines deep expertise, strong ethics and clear communication.  A project begins with discovery, when I learn the business rules and constraints, your current needs, your future goals.  It continues with accountability: Is the design doing what you want?  Are you getting your money's worth?  And, in my experience so far, it always ends with satisfaction.
+        </p>
 
         <div class="portfolio-grid">
 
             <div class="project-card">      <!-- Engineer-to-Order Mfg -->
                 <div class="project-image">
-					<img src="img/eng_to_order_1.png" alt="A nozzle for use in a decorative water fountain." title="A product for efficient manufacture and sale.">
-					
+					<img src="img/eng_to_order_2.png" 
+						alt="A nozzle for use in a decorative water fountain." 
+						title="A product for efficient manufacture and sale.">
 				</div>
                 <div class="project-content">
-                    
 					<h3>Engineer-to-Order Production</h3>
 					<p>
-					An engineer-to-order manufacturing firm had no trouble selling projects, but needed a way to document and track quotations.  I converted the print-based catalog to Access and created a pick-list approach to building RFQs.  The application expanded into Materials Resource Planning. The key was data for the manufacturing bills of materials &mdash; but that was trapped in an accounting software package that used proprietary safeguards to prevent usage outside of the software's limited feature set.  I was able to migrate the BOMs over to SQL Server, and used Access on the front end for improved product costing and production reporting.  For seven years this solution helped sales, inventory, production planning and quality control. 
+					An engineer-to-order manufacturing firm had no trouble finding customers, but needed ways to track sales and production. Starting from the print-based catalog, I used Access to create a pick-list approach for building quotes. I improved the means for product costing, and built production reports. I exported bills of material from an accounting software into SQL Server to enable Materials Resource Planning. 
 					</p>
                     <div class="project-tags">
                         <span class="tag">MRP</span>
@@ -520,36 +519,12 @@
                     </div>
                 </div>
             </div>
-                        
-            <div class="project-card">      <!-- Property Valuation Analysis -->
-                <div class="project-image">
-					<img src="img/property_valuation.png" alt="houses with value" title="Residential properties with a hint of their relative value.">
-					
-				</div>                
-
-                
-                <div class="project-content">
-                    
-					<h3>Property Valuation Analysis</h3>
-                    <p>
-					I administered a comprehensive survey of publicly-available information on property appraisal values, stored in SQL Server with Microsoft Access for the user interface. The front-end, in particular, needed rescue from fifteen years of chaotic development.  This I achieved by:
-					<ul><li>Cleaning up VBA code to make it variable-explicit and compilable</li>
-					<li>Optimizing the data processes between SQL Server and the front end</li>
-					<li>Annotating the code with explanations of both business rules and technical methods</li>
-                    <li>Redesigning forms for clarity and aesthetic design</li>
-					<ul>
-					These measures improved speed by 50% and facilitated the replacement of Access with a browser-based solution.</p>
-                    <div class="project-tags">
-                        <span class="tag">SQL Server</span>
-                        <span class="tag">MS Access</span>
-                        <span class="tag">Optimization</span>
-                    </div>
-                </div>
-            </div>
 			
             <div class="project-card">      <!-- Medical Provider Credentialing -->
                 <div class="project-image">
-					<img src="img/med-credentialing.png" alt="standards for medical practice credentialing" title="Medical personnel and their regular assessment.">
+					<img src="img/med-credentialing.png" 
+						alt="picture of medical practitioners" 
+						title="Periodic credentialing review of medical personnel.">
 				</div>
                 <div class="project-content">
                     <h3>Medical Provider Credentialing</h3>
@@ -563,11 +538,13 @@
 
             <div class="project-card">      <!-- Case-Review Process -->
                 <div class="project-image">
-					<img src="img/workflow diagram temp.png" alt="FIXME" title="FIXME.">
+					<img src="img/workflow-2.png" 
+						alt="diagram of a business process" 
+						title="Universal Process Notation (UPN) for a business process.">
 				</div>
                 <div class="project-content">
                     <h3>Case-Review Process</h3>
-                    <p>I re-engineered a case-review process that involved four departments within a large managed-care organization.  After mapping the process, which relied a system of spreadsheets and ad-hoc emails, I implemented a solution using stored procedures in SQL Server, reporting via Microsoft SSRS, and a wizard-style automated process in Microsoft Access.  It reduced turnaround time by 80%. 
+                    <p>I re-engineered a case-review process that involved four departments within a large managed-care organization.  After mapping the process, which relied a system of spreadsheets and ad-hoc emails, I implemented a solution using stored procedures in SQL Server, reporting via Microsoft SSRS, and a wizard-style automated process in Microsoft Access.  This reduced turnaround time by 80%. 
                     </p>
                     <div class="project-tags">
                         <span class="tag">Business Process Review</span>
@@ -575,7 +552,24 @@
                     </div>
                 </div>
             </div>
-		
+		             
+            <div class="project-card">      <!-- Property Valuation Analysis -->
+                <div class="project-image">
+					<img src="img/property_valuation.png" 
+						alt="picture of houses with balloons and dollar signs" 
+						title="Residential properties compared in terms of relative value.">
+				</div>                
+                <div class="project-content">
+					<h3>Property Valuation Analysis</h3>
+                    <p>
+					I administered a comprehensive survey of publicly-available information on property values, stored in SQL Server with Microsoft Access.  I doubled runtime efficiency by cleaning up the VBA code in Access and optimizing the data processes between SQL Server and the front end. I also annotated the code to explain business rules and technical methods. These successes ultimately helped in replacing the Access application with a browser-based solution.</p>
+                    <div class="project-tags">
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">MS Access</span>
+                        <span class="tag">VBA optimization</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -583,39 +577,39 @@
     <section id="skills">
         <h2>Skills & Expertise</h2>
         <p class="section-intro">
-            A comprehensive toolkit for building robust database solutions from concept to deployment.
+            I work from a comprehensive toolkit in building robust database solutions from concept to deployment.
         </p>
 
         <div class="skills-grid">
             <div class="skill-category">
                 <h3>Database Development</h3>
                 <ul>
-                    <li>MS Access (All Versions)</li>
                     <li>Database Design & Normalization</li>
                     <li>SQL & Query Optimization</li>
-                    <li>Data Migration & Integration</li>
-                    <li>Backend/Frontend Architecture</li>
+                    <li>MS Access (all versions)</li>
+                    <li>Data Migration</li>
+                    <li>Backend/Frontend Design</li>
                 </ul>
             </div>
 
             <div class="skill-category">
                 <h3>Programming & Automation</h3>
                 <ul>
-                    <li>VBA Development</li>
-                    <li>Macro Programming</li>
-                    <li>Workflow Automation</li>
-                    <li>Error Handling & Debugging</li>
+                    <li>VBA and Macro Development</li>
+                    <li>SQL Development</li>
+                    <li>Deployment Automation</li>
                     <li>API Integration</li>
+                    <li>Scripting</li>
                 </ul>
             </div>
 
             <div class="skill-category">
                 <h3>User Interface Design</h3>
                 <ul>
+                    <li>User Experience</li>
                     <li>Form Design & Development</li>
                     <li>Report Creation</li>
                     <li>Dashboard Development</li>
-                    <li>User Experience Optimization</li>
                     <li>Custom Controls & Navigation</li>
                 </ul>
             </div>
@@ -625,7 +619,7 @@
                 <ul>
                     <li>Requirements Analysis</li>
                     <li>Process Automation</li>
-                    <li>Data Analysis & Reporting</li>
+                    <li>Data Engineering</li>
                     <li>Documentation & Training</li>
                     <li>Maintenance & Support</li>
                 </ul>
@@ -634,24 +628,25 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Get In Touch</h2>
+    <section id="hero">
+        <h2>Let's talk!</h2>
         <p class="section-intro">
-            Ready to discuss your database project? I'd love to hear about your challenges and explore how I can help.
-        </p>
-
+            Are you ready to discuss your database project?  I'd love to find out if I can help.
+        </p>  
+     
         <div class="contact-info">
-            <div class="contact-item">
-                <div class="icon">✉</div>
-                <a href="mailto:your.email@example.com">your.email@example.com</a>
+
+            <div class="contact-item" style="width:180px">
+                <div class="icon"><img src="img/atsign-blue-circle-20559_64.png"></div>
+                <a href="mailto:Scott.David.Morse@gmail.com">Scott.David.Morse@gmail.com</a>
             </div>
-            <div class="contact-item">
-                <div class="icon">📱</div>
-                <a href="tel:+1234567890">(123) 456-7890</a>
+            <div class="contact-item" style="width:180px">
+                <div class="icon"><img src="img/green-circle-phone-20546_64.png"></div>
+                <a href="tel:+5129397503">(512) 939-7503</a>
             </div>
-            <div class="contact-item">
-                <div class="icon">💼</div>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a>
+            <div class="contact-item" style="width:180px">
+                <div class="icon"><img src="img/linkedin-2166_64.png"></div>
+                <a href="https://www.linkedin.com/in/scottdavidmorse/" target="_blank">LinkedIn Profile</a>
             </div>
         </div>
     </section>
