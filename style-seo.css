@@ -10,13 +10,14 @@
             --sans: 'Work Sans', sans-serif;
         }		
         * {
-			font-size: 25px;
+			font-size: 15px;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         body {
+			/* "https://fonts.googleapis.com/css2?family=Signika:ital,wght@0,300;0,400;0,600;1,300&family=Work+Sans:wght@300;400;500&display=swap" */
             font-family: var(--sans);
             color: var(--color-ink);
             background: var(--color-paper);
