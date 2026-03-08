@@ -18,7 +18,8 @@
 
         body {
 			/* "https://fonts.googleapis.com/css2?family=Signika:ital,wght@0,300;0,400;0,600;1,300&family=Work+Sans:wght@300;400;500&display=swap" */
-            font-family: var(--sans);
+			font-family: 'Work Sans', sans};
+            /*font-family: var(--sans);*/
             color: var(--color-ink);
             background: var(--color-paper);
             line-height: 1.7;
