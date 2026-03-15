@@ -1,23 +1,23 @@
     <style>
         :root {
-            --color-ink: #1a1a1a;
-            --color-slate: #2a313c;
-            --color-mist: #e8edf2;
-            --color-paper: #fafbfc;
-            --color-accent: #2a5e89;
-            --color-accent-light: #306b9c;
-            --serif: 'Signika', serif;
+            --color-ink: #1a1a1a;           # claude original
+            --color-slate: #2a313c;         # #4a5568
+            --color-mist: #e8edf2;          # #e8edf2
+            --color-paper: #fafbfc;         # #fafbfc
+            --color-accent: #2a5e89;        # #2c5282
+            --color-accent-light: #306b9c;  # #4a90c8
+            --serif: 'Signika', serif;      # 'Fraunces', serif;
             --sans: 'Work Sans', sans-serif;
-        }		
+        }       
         * {
-			font-size: 15px;
+            font-size: 15px;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         body { 
-			font-family: 'Work Sans', sans}; 
+            font-family: 'Work Sans', sans}; 
             font-family: var(--sans);
             color: var(--color-ink);
             background: var(--color-paper);
