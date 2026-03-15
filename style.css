@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scott Morse, Database Administration</title>
-    <link href="https://fonts.googleapis.com/css2?family=Signika:ital,wght@0,300;0,400;0,600;1,300&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
             --color-ink: #1a1a1a;
@@ -15,15 +8,16 @@
             --color-accent-light: #306b9c;
             --serif: 'Signika', serif;
             --sans: 'Work Sans', sans-serif;
-        }
-
+        }		
         * {
+			font-size: 15px;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
+        body { 
+			font-family: 'Work Sans', sans}; 
             font-family: var(--sans);
             color: var(--color-ink);
             background: var(--color-paper);
@@ -31,8 +25,8 @@
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
         }
-
         /* Navigation */
+
         nav {
             position: fixed;
             top: 0;
@@ -63,7 +57,6 @@
             justify-content: space-between;
             align-items: center;
         }
-
         nav .logo {
             font-family: var(--serif);
             font-size: 1.3rem;
@@ -93,6 +86,7 @@
         }
 
         /* Hero Section */
+
         .hero {
             margin-top: 80px;
             padding: 8rem 2rem 6rem;
@@ -181,6 +175,7 @@
         }
 
         /* Section Styling */
+
         section {
             padding: 6rem 2rem;
             max-width: 1200px;
@@ -216,6 +211,7 @@
         }
 
         /* Portfolio Grid */
+
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -301,6 +297,7 @@
         }
 
         /* Skills Section */
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -353,6 +350,7 @@
         }
 
         /* Contact Section */
+
         #contact {
             background: linear-gradient(135deg, var(--color-mist) 0%, var(--color-paper) 100%);
             border-radius: 12px;
@@ -403,6 +401,7 @@
         }
 
         /* Footer */
+
         footer {
             text-align: center;
             padding: 3rem 2rem;
@@ -412,6 +411,7 @@
         }
 
         /* Responsive */
+
         @media (max-width: 768px) {
             nav ul {
                 gap: 1.5rem;
@@ -444,243 +444,9 @@
         }
 
         /* Smooth scrolling */
+
         html {
             scroll-behavior: smooth;
         }
+
     </style>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <a href="#" class="logo">Portfolio</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Database Solutions <strong>that Work</strong></h1>
-            <p class="subtitle">I'm a Microsoft Access expert who works on business applications that feature data-driven solutions and automated workflows.  I've provided many companies with database apps to enable financial decision-making, streamline operations and enhance productivity.</p>
-			<!-- </br> -->
-            <!-- <a href="#portfolio" class="cta-button">View My Work</a> -->
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p class="section-intro">
-            I've been creating and improving data applications in central Texas for over two decades.  
-			</br></br>
-			My main talent is communication.  I can unpack technical issues (see my posts on <a href="https://stackoverflow.com/users/122139/smandoli">Stack Overflow</a>, and I'm equally able to present my work in non-technical terms.  Either way, the discussion is brief and clear.
-            </br></br>
-            Another strength is change management.  I know the value of bringing everyone on board.  Many times, addressing a group of project stakeholders, I've successfully built a new consensus on design or implementation.  
-        </p> 
-	</section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p class="section-intro"> 
-            My work combines deep expertise, strong ethics and clear communication.  A project begins with discovery, when I learn the business rules and constraints, your current needs, your future goals.  It continues with accountability: Is the design doing what you want?  Are you getting your money's worth?  And, in my experience so far, it always ends with satisfaction.
-        </p>
-
-        <div class="portfolio-grid">
-            <div class="project-card">      <!-- Engineer-to-Order Mfg -->
-                <div class="project-image">
-					<img src="img/eng_to_order_2.png" 
-						alt="A nozzle for use in a decorative water fountain." 
-						title="A product for efficient manufacture and sale.">
-				</div>
-                <div class="project-content">
-					<h3>Engineer-to-Order Production</h3>
-					<p>
-					An engineer-to-order manufacturing firm had no trouble finding customers, but needed ways to track sales and production. Starting from the print-based catalog, I used Access to create a pick-list approach for building quotes. I improved the means for product costing, and built production reports. I exported bills of material from an accounting software into SQL Server to enable Materials Resource Planning. 
-					</p>
-                    <div class="project-tags">
-                        <span class="tag">MRP</span>
-                        <span class="tag">Product costing</span>
-                        <span class="tag">Production efficiency</span>
-                    </div>
-                </div>
-            </div>
-			
-            <div class="project-card">      <!-- Medical Provider Credentialing -->
-                <div class="project-image">
-					<img src="img/med-credentialing.png" 
-						alt="picture of medical practitioners" 
-						title="Periodic credentialing review of medical personnel.">
-				</div>
-                <div class="project-content">
-                    <h3>Medical Provider Credentialing</h3>
-                    <p>My work in SQL Server and Microsoft Access supported regulatory compliance and operational efficiency for a large managed care organization. To facilitate regular credentialing of 60,000 networked healthcare providers, I developed regular and ad-hoc data imports, reporting and many SQL procedures. </p>
-                    <div class="project-tags">
-                        <span class="tag">Work scheduling</span>
-                        <span class="tag">Compliance</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">      <!-- Case-Review Process -->
-                <div class="project-image">
-					<img src="img/workflow-2.png" 
-						alt="diagram of a business process" 
-						title="Universal Process Notation (UPN) for a business process.">
-				</div>
-                <div class="project-content">
-                    <h3>Case-Review Process</h3>
-                    <p>I re-engineered a case-review process that involved four departments within a large managed-care organization.  After mapping the process, which relied a system of spreadsheets and ad-hoc emails, I implemented a solution using stored procedures in SQL Server, reporting via Microsoft SSRS, and a wizard-style automated process in Microsoft Access.  This reduced turnaround time by 80%. 
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Business Process Review</span>
-                        <span class="tag">Workflows</span>
-                    </div>
-                </div>
-            </div>
-		             
-            <div class="project-card">      <!-- Property Valuation Analysis -->
-                <div class="project-image">
-					<img src="img/property_valuation.png" 
-						alt="picture of houses with balloons and dollar signs" 
-						title="Residential properties compared in terms of relative value.">
-				</div>                
-                <div class="project-content">
-					<h3>Property Valuation Analysis</h3>
-                    <p>
-					I administered a comprehensive survey of publicly-available information on property values, stored in SQL Server with Microsoft Access.  I doubled runtime efficiency by cleaning up the VBA code in Access and optimizing the data processes between SQL Server and the front end. I also annotated the code to explain business rules and technical methods. These successes ultimately helped in replacing the Access application with a browser-based solution.</p>
-                    <div class="project-tags">
-                        <span class="tag">SQL Server</span>
-                        <span class="tag">MS Access</span>
-                        <span class="tag">VBA optimization</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills & Expertise</h2>
-        <p class="section-intro">
-            I work from a comprehensive toolkit in building robust database solutions from concept to deployment.
-        </p>
-
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Database Development</h3>
-                <ul>
-                    <li>Database Design & Normalization</li>
-                    <li>SQL & Query Optimization</li>
-                    <li>MS Access (all versions)</li>
-                    <li>Data Migration</li>
-                    <li>Backend/Frontend Design</li>
-                </ul>
-            </div>
-
-            <div class="skill-category">
-                <h3>Programming & Automation</h3>
-                <ul>
-                    <li>VBA and Macro Development</li>
-                    <li>SQL Development</li>
-                    <li>Deployment Automation</li>
-                    <li>API Integration</li>
-                    <li>Scripting</li>
-                </ul>
-            </div>
-
-            <div class="skill-category">
-                <h3>User Interface Design</h3>
-                <ul>
-                    <li>User Experience</li>
-                    <li>Form Design & Development</li>
-                    <li>Report Creation</li>
-                    <li>Dashboard Development</li>
-                    <li>Custom Controls & Navigation</li>
-                </ul>
-            </div>
-
-            <div class="skill-category">
-                <h3>Business Solutions</h3>
-                <ul>
-                    <li>Requirements Analysis</li>
-                    <li>Process Automation</li>
-                    <li>Data Engineering</li>
-                    <li>Documentation & Training</li>
-                    <li>Maintenance & Support</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Let's talk!</h2>
-        <p class="section-intro">
-            Are you ready to discuss your database project?  I'd love to find out if I can help.
-        </p>  
-
-        <div class="contact-info">
-            <div class="contact-item" style="width:180px">
-                <div class="icon"><img src="img/atsign-blue-circle-20559_64.png"></div>
-                <a href="mailto:Scott.David.Morse@gmail.com">Scott.David.Morse@gmail.com</a>
-            </div>
-            <div class="contact-item" style="width:180px">
-                <div class="icon"><img src="img/green-circle-phone-20546_64.png"></div>
-                <a href="tel:+5129397503">(512) 939-7503</a>
-            </div>
-            <div class="contact-item" style="width:180px">
-                <div class="icon"><img src="img/linkedin-2166_64.png"></div>
-                <a href="https://www.linkedin.com/in/scottdavidmorse/" target="_blank">LinkedIn Profile</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Scott Morse DBA. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Smooth scroll for navigation links
-        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Intersection Observer for scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe project cards
-        document.querySelectorAll('.project-card').forEach(card => {
-            observer.observe(card);
-        });
-    </script>
-</body>
-</html>
