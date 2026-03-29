@@ -309,10 +309,14 @@ section .section-intro {
 	background: linear-gradient(135deg, var(--color-mist) 0%, var(--color-paper) 100%);
 	border-radius: 12px;
 	padding: 3rem 2rem;
-	text-align: center;
+	text-align: left;
 }
 #contact h2 {
-	margin-bottom: 1.5rem;
+	/*margin-bottom: 1rem;
+	justify-content: left;*/
+}
+.section-intro {
+		font-weight: 500;
 }
 .contact-info {
 	display: flex;
